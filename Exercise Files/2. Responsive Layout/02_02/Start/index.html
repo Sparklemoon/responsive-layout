@@ -11,8 +11,14 @@
 		}
 	}
 	/* we are asking the browser, is the veiwport a minimum width of 600 pixels: 
-	if the query is true then the CSS inside of the media query is applied */
-
+	if the query is true then the CSS inside of the media query is applied if it 
+	is false the CSS is ignored*/
+	@media (min-width: 900px) {
+		body {
+			background-color: gray;
+			}
+			/* when it gets to more than 900 the background will change to gray */
+	}
 
 	</style>
 </head>
