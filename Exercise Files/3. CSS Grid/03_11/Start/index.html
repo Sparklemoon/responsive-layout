@@ -10,9 +10,23 @@
 		display: grid;
 		grid-gap: 10px;
 		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "apple orange"
+		"banana banana"
+		"plum mango";
 	}
+.item3 {
+	grid-area: mango;
+}
+.item11 {
+	grid-area: apple;
+}
+.item8 {
+	grid-area: banana;
+}
 
-
+/* since there was two cells named banana eight takes up bot of those cells: 
+you cna do this with any contiguous cells having the same name as long as it's 
+a rectangle like this */
 
 	</style>
 </head>

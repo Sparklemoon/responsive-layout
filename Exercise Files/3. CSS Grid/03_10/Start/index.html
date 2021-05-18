@@ -9,6 +9,11 @@
 	.container {
 		display: grid;
 		grid-gap: 10px;
+		grid-template-columns: 50px minmax(100px, 1fr) minmax(70px, 1fr);
+		/* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+		/* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+		/* grid-template-columns: repeat(auto-fill, 150px); */
+		justify-content: space-between;
 	}
 
 
@@ -26,7 +31,7 @@
 		<div class="item item3">
 			three
 		</div>
-		<div class="item item4">
+		<!-- <div class="item item4">
 			four
 		</div>
 		<div class="item item5">
@@ -52,7 +57,10 @@
 		</div>
 		<div class="item item12">
 			twelve
-		</div>
+		</div> -->
 	</div>
 </body>
 </html>
+
+<!-- grid-template-columns: repeat(auto-fill, 150px   makes a different number
+	of columns depending how much space there is) -->
